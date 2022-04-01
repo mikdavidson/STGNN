@@ -17,6 +17,14 @@ python3
 
 See `requirements.txt`
 
+
+# Installation
+
+python3
+
+See `requirements.txt`
+
+
 # Experiments
 
 ## Random-Search Hyper-Parameter Optimisation(HPO)
