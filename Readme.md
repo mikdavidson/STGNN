@@ -20,9 +20,11 @@ See `requirements.txt`
 
 # Installation
 
-python3
+`virtualenv -p /usr/bin/python3.8 venv`
 
-See `requirements.txt`
+`source venv/bin/activate`
+
+`pip3 install -r requirements.txt`
 
 
 # Experiments
