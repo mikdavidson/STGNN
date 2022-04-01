@@ -1,5 +1,4 @@
 import argparse
-import tensorflow as tf
 import HPO.sarimaHPO as sarimaHPO
 import HPO.lstmHPO as lstmHPO
 import HPO.tcnHPO as tcnHPO
@@ -142,14 +141,10 @@ if __name__ == '__main__':
 
     # Train final LSTM models
     if args.train_lstm:
-        physical_devices = tf.config.list_physical_devices('GPU')
-        tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
         lstmTrain.train(stations, increment)
 
     # Train final TCN models
     if args.train_tcn:
-        physical_devices = tf.config.list_physical_devices('GPU')
-        tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
         tcnTrain.train(stations, increment)
 
     # Train final GWN models
