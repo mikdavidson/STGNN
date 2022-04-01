@@ -44,7 +44,7 @@ parser.add_argument('--n_stations', type=int, default=21, help='number of weathe
 parser.add_argument('--n_split', type=int, default=27, help='number of splits in walk-forward validation')
 
 # Graph WaveNet arguments, default arguments are optimal hyper-parameters
-parser.add_argument('--device', type=str, default='cuda', help='device to place model on')
+parser.add_argument('--device', type=str, default='cpu', help='device to place model on')
 parser.add_argument('--data', type=str, default='Data/Graph Neural Network Data/Graph Station Data/Graph.csv',
                     help='data path')
 parser.add_argument('--adjdata', type=str, default='Data/Graph Neural Network Data/Adjacency Matrix/adj_mx.pkl',
