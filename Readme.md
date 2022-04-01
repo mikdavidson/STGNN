@@ -11,6 +11,12 @@
 | ----------- | ----------- |
 | A/Prof Deshendran Moodley | Computer Science       |
 
+# Requirements
+
+python3
+
+See `requirements.txt`
+
 # Experiments
 
 ## Random-Search Hyper-Parameter Optimisation(HPO)
