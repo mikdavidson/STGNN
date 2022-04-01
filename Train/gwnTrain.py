@@ -78,7 +78,7 @@ def train_model(args, data_sets, split, supports, adj_init, dictionary):
         if patience == args.patience:
             break
 
-        print(util.get_adj_matrix(engine.model))
+#         print(util.get_adj_matrix(engine.model))
     engine.model = util.load_model(dictionary['modelFile'])
 
     testStart = time.time()
